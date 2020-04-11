@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<title>图片详情</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="reset.css" media="all">
+	<link rel="stylesheet" type="text/css" href="details.css" media="all">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li class="nav"><img src="../img/home.png" width="30px" height="30px"></li>
+			<li class="nav"><a href="Home.html" class="home">首页</a></li>
+			<li class="nav"><a href="browser.html" class="home">浏览页</a></li>
+			<li class="nav"><a href="search.html" class="home">搜索页</a></li>
+			<li class="nav" id="nav_person"><img src="../img/personal.png" width="30px" height="30px"></li>
+			<div class="dropdown"><li class="nav"><button id="personal">个人中心</button></li>		
+				<div class="dropdown-content">
+					<ul class="person">					
+						<li><img src="../img/upload.png" width="25px" height="25px"><a href="upload.html">上传  </a></li>
+						<li><img src="../img/photo.png" width="25px" height="25px"><a href="myphoto.html">我的照片</a></li>
+						<li><img src="../img/favor.png" width="25px" height="25px"><a href="favor.html">我的收藏</a></li>
+						<li><img src="../img/login.png" width="25px" height="25px"><a href="../index.html">登入  </a></li>
+					</ul>
+				</div>
+			</div>				
+		</ul>	
+	</nav>
+	<section>
+		<div>
+			<figure>
+				<img src="../img/9496560520.jpg" width="680px" height="600px" id="image">
+				<figcaption>
+					<div id="name">
+						<h3>serendipity</h3><h4>by zzy</h4>
+					</div>
+					<div class="detail">
+						<table>
+							<caption>details</caption>
+							<tr>
+								<td>theme:</td>
+								<td>scene</td>
+							</tr>
+							<tr>
+								<td>country:</td>
+								<td>china</td>
+							</tr>
+							<tr>
+								<td>city:</td>
+								<td>shanghai</td>
+							</tr>
+						</table>
+					</div>
+					<p class="description">Some of us get dipped in flat, some in satin, some in gloss. But every once in a while you find someone who’s iridescent, and when you do, nothing will compare.Some of us get dipped in flat, some in satin, some in gloss. But every once in a while you find someone who’s iridescent, and when you do, nothing will compare.</p>
+					<div class="like">
+						<table>
+							<tr>
+								<th>liked</th>
+							</tr>
+							<tr>
+								<td>133</td>
+							</tr>
+						</table>
+						<form method="post" name="like" action="http://127.0.0.1/zdl/echo-data.asp">
+							<input type="button" name="like" value="like" onclick="alert('图⽚已刷新')">
+						</form>
+					</div>
+				</figcaption>
+			</figure>
+		</div>
+	</section>
+<footer><hr><p>&copyzzy iridescent</p></footer>
+</body>
+</html>
